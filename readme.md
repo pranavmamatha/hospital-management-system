@@ -13,10 +13,10 @@ A backend REST API built with Django & Django REST Framework.
 ## Tech Stack
 
 - **Backend** — Django, Django REST Framework
-- **Database** — PostgreSQL (Render)
+- **Database** — PostgreSQL
 - **Auth** — JWT (SimpleJWT)
 - **Cache** — Redis
-- **Deployment** — Render
+- **Deployment** — AWS
 
 ## API Endpoints
 
@@ -56,3 +56,15 @@ POST   /api/billing/               Create invoice
 | Doctor | dr_smith | doctor123 |
 | Patient | patient_arjun | patient123 |
 
+## Local Setup
+
+```bash
+git clone https://github.com/prudh-vi/hospital
+cd hospital
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py seed
+python manage.py runserver
+```
