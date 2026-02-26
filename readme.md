@@ -55,16 +55,3 @@ POST   /api/billing/               Create invoice
 | Admin | admin | admin123 |
 | Doctor | dr_smith | doctor123 |
 | Patient | patient_arjun | patient123 |
-
-## Local Setup
-
-```bash
-git clone https://github.com/prudh-vi/hospital
-cd hospital
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py seed
-python manage.py runserver
-```
