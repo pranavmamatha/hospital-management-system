@@ -6,9 +6,9 @@ A backend REST API built with Django & Django REST Framework.
 
 | | URL |
 |---|---|
-| API Base | https://hospital-gxio.onrender.com/api |
-| Swagger Docs | https://hospital-gxio.onrender.com/swagger |
-| Admin Panel | https://hospital-gxio.onrender.com/admin |
+| API Base | https://pranav-hospital-management.zeroreality.in/api |
+| Swagger Docs | https://pranav-hospital-management.zeroreality.in/swagger |
+| Admin Panel | https://pranav-hospital-management.zeroreality.in/admin |
 
 ## Tech Stack
 
@@ -56,15 +56,3 @@ POST   /api/billing/               Create invoice
 | Doctor | dr_smith | doctor123 |
 | Patient | patient_arjun | patient123 |
 
-## Local Setup
-
-```bash
-git clone https://github.com/prudh-vi/hospital
-cd hospital
-python -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py seed
-python manage.py runserver
-```
